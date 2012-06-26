@@ -6,7 +6,7 @@ Dir['tasks/**/*.rb'].each { |t| load t }
 
 spec = Gem::Specification.new do |s|
   s.name = "hiera-property_central"
-  s.version = described_version
+  s.version = "0.1"
   s.author = "Wouter van Bommel"
   s.email = "info@vanbommelonline.nl"
   s.homepage = "https://github.com/woutervb/hiera-central_property"
