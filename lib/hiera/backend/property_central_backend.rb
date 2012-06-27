@@ -24,7 +24,7 @@ class Hiera
         http             = Net::HTTP.new(property_central_uri.host, property_central_uri.port)
         request          = Net::HTTP::Get.new(property_central_uri.request_uri)
 
-        YAML.load(http.request(request).body)['parameters'][key]
+        YAML.load(http.request(request).body)['parameters']
       end
     end
   end
